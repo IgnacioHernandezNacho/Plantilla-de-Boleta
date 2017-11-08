@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-11-2017 a las 00:01:55
+-- Tiempo de generación: 09-11-2017 a las 00:52:57
 -- Versión del servidor: 10.1.21-MariaDB
 -- Versión de PHP: 5.6.30
 
@@ -110,6 +110,21 @@ CREATE TABLE `formacion civica y etica` (
   `cua_bime` int(3) NOT NULL,
   `qui_bime` int(3) NOT NULL,
   `prom_final` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `inasistencia`
+--
+
+CREATE TABLE `inasistencia` (
+  `pri_bime` int(2) NOT NULL,
+  `seg_bime` int(2) NOT NULL,
+  `ter_bime` int(2) NOT NULL,
+  `cua_bime` int(2) NOT NULL,
+  `qui_bime` int(2) NOT NULL,
+  `total` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
